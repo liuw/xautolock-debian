@@ -1,0 +1,212 @@
+xautolock (1:2.2-4) unstable; urgency=low
+
+  * debian/control:
+    - Removed xautolock from Recommends since it was removed from Debian
+    - Standards-Version: 3.9.4
+    - Depends: debhelper (>= 9)
+  * debian/compat: 9
+  * debian/rules:
+    - Use hardening flags
+    - Use dh style rules
+
+ -- Roland Stigge <stigge@antcom.de>  Thu, 09 May 2013 14:20:14 +0200
+
+xautolock (1:2.2-3) unstable; urgency=low
+
+  * Added debian/watch
+
+ -- Roland Stigge <stigge@antcom.de>  Mon, 15 Aug 2011 22:14:15 +0200
+
+xautolock (1:2.2-2) unstable; urgency=low
+
+  * Moved to source format 3.0 (quilt)
+    - removed dpatch dependency
+  * Fixed HPPA build issue (Closes: #577682)
+
+ -- Roland Stigge <stigge@antcom.de>  Sat, 05 Jun 2010 14:59:08 +0200
+
+xautolock (1:2.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Removed debian/patches/01_reset-after-sleep.dpatch, included upstream now
+
+ -- Roland Stigge <stigge@antcom.de>  Sat, 06 Mar 2010 20:52:28 +0100
+
+xautolock (1:2.1-8) unstable; urgency=low
+
+  * Build-Depend: x11proto-core-dev (Closes: #515410)
+  * Added patch by Miguelangel Jose Freitas Loreto
+    <miguelangel.freitas@gmail.com> to fix the no DPMS detection
+    (Closes: #545778)
+  * debian/control: Standards-Version: 3.8.4
+  * Acknowledge NMU
+
+ -- Roland Stigge <stigge@antcom.de>  Sun, 21 Feb 2010 16:40:38 +0100
+
+xautolock (1:2.1-7.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * 10-fix-memory-corruption to fix a memory corruption problem leading to
+    a user security problem (closes: 514406). Thanks to 
+    Uli <ToBeSpammed@web.de> for spotting the problem and providing the fix.
+  * Urgency high since it is a user security hole that really should make
+    it into lenny.
+
+ -- Vincent Fourmond <fourmond@debian.org>  Tue, 10 Feb 2009 21:49:25 +0100
+
+xautolock (1:2.1-7) unstable; urgency=high
+
+  * High-urgency upload for RC bugfix by Steve Langasek
+  * Build against xutils-dev (>= 1:1.0.2-2) to get the X11R7 paths, and
+    fix debian/rules to install to /usr/share/man instead of 
+    /usr/X11R6/man (Closes: #362773)
+
+ -- Roland Stigge <stigge@antcom.de>  Sun, 16 Apr 2006 10:52:38 +0200
+
+xautolock (1:2.1-6) unstable; urgency=low
+
+  * Changed from xlibs-dev build dependency to new individual X.org
+    development package dependencies (Closes: #346793)
+  * debian/control: Standards-Version: 3.6.2
+  * debian/rules: renamed xautolock.1x to xautolock.1
+
+ -- Roland Stigge <stigge@antcom.de>  Tue, 10 Jan 2006 08:49:45 +0100
+
+xautolock (1:2.1-5) unstable; urgency=low
+
+  * debian/control: Added dpatch to Build-Depends
+  * Added debian/patches/01_reset-after-sleep.dpatch (Closes: #241213)
+
+ -- Roland Stigge <stigge@antcom.de>  Sat,  3 Apr 2004 13:48:13 +0200
+
+xautolock (1:2.1-4) unstable; urgency=low
+
+  * debian/copyright: Copyright clarification
+
+ -- Roland Stigge <stigge@antcom.de>  Mon, 15 Dec 2003 11:34:50 +0100
+
+xautolock (1:2.1-3) unstable; urgency=low
+
+  * New maintainer (Closes: #220557)
+  * debian/control: Adjusted Description
+  * debian/rules clean: removes (xmkmf generated) Makefile
+  * Removed redundant man pages from source tree
+  * debian/changelog: Changed encoding from ISO-8859-1 to UTF-8
+  * debian/copyright: Actuality adjustments
+  * Removed debian/dirs
+  * Standards-Version: 3.6.1
+
+ -- Roland Stigge <stigge@antcom.de>  Tue, 18 Nov 2003 21:09:01 +0100
+
+xautolock (1:2.1-2) unstable; urgency=low
+
+  * Don't use /usr/share/doc/xautolock/html/ (closes: Bug#191389,Bug#190842)
+
+ -- Søren Boll Overgaard <boll@debian.org>  Wed, 30 Apr 2003 12:43:48 +0000
+
+xautolock (1:2.1-1) unstable; urgency=low
+
+  * New maintainer (Closes: Bug#189522)
+  * New upstream version.
+  * Move to debhelper
+
+ -- Søren Boll Overgaard <boll@debian.org>  Wed, 23 Apr 2003 18:18:20 +0000
+
+xautolock (1:2.0-2.1) unstable; urgency=low
+
+  * NMU
+  * Update Build-Depends from xlib6g-dev to xlibs-dev.  Closes: #170116.
+
+ -- Daniel Schepler <schepler@debian.org>  Sat, 15 Mar 2003 20:58:06 -0800
+
+xautolock (1:2.0-2) unstable; urgency=low
+
+  * patch from Patrice Neff: correct -notify  (closes: #147866)
+
+ -- Frederic Lepied <Lepied@debian.org>  Sun,  3 Nov 2002 17:39:28 +0000
+
+xautolock (1:2.0-1) unstable; urgency=low
+    
+  * new version (closes: #102883)
+  * not native build (closes: #44331)
+  * should build on all platform (closes: #64205)
+  * added Epoch.
+  
+ -- Frederic Lepied <Lepied@debian.org>  Thu, 22 Nov 2001 02:42:49 +0000
+
+xautolock (pl15-3) unstable; urgency=low
+
+  * removed debian/files in the clean target of debian/rules. Closes: Bug#46480.
+  * changed the package description. Closes: #37502.
+  * Closes: Bug#4433.
+
+ -- Frederic Lepied <Lepied@debian.org>  Sun, 10 Oct 1999 20:39:13 +0200
+
+xautolock (pl15-2) unstable; urgency=low
+
+  * pristine sources. CLoses: Bug#4433.
+
+ -- Frederic Lepied <Lepied@debian.org>  Sun,  5 Sep 1999 18:19:07 +0200
+
+xautolock (pl15-1) unstable; urgency=low
+
+  *  new upstream version. Closes bugs #14630 and #34509..
+
+ -- Frederic Lepied <Lepied@debian.org>  Sat, 27 Mar 1999 07:19:35 +0100
+
+xautolock (pl13-1) unstable; urgency=low
+
+  * new upstream version.
+
+ -- Frederic Lepied <Lepied@debian.org>  Thu, 19 Nov 1998 20:45:30 +0100
+
+xautolock (pl10-7) unstable; urgency=low
+
+  * new maintainer.
+  * compiled with libc6.
+  * put the copyright under /usr/doc/xautolock (closed bug #10625).
+
+ -- Frederic Lepied <Lepied@debian.org>  Sun,  6 Jul 1997 08:48:50 +0200
+
+xautolock (pl10-6) unstable; urgency=LOW
+
+  * Removed distribution frozen from release
+
+ -- Michael Meskes <meskes@debian.org>  Tue,  3 Jun 1997 20:42:04 +0200
+
+xautolock (pl10-5) frozen unstable; urgency=LOW
+
+  * Really fix bug#8618
+
+ -- Michael Meskes <meskes@debian.org>  Fri, 30 May 1997 14:30:47 +0200
+
+xautolock (pl10-4) frozen unstable; urgency=LOW
+
+  * Do not use free on a getenv return value (Bug#8618)
+  * Changed section to non-free, although it is almost free (Bug#8676)
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 16 Sep 1996 10:31:57 +0200
+
+xautolock (pl10-3) unstable; urgency=LOW
+
+  * New source packing scheme
+  * Install docs
+  * Added a `Recommends: xlockmore|xtrlock' line to control file (Bug#4438)
+
+ -- Michael Meskes <meskes@debian.org>  Mon, 16 Sep 1996 10:31:57 +0200
+
+Tue Apr 30 16:57:14 MET DST 1996 Michael Meskes <meskes@debian.org>
+
+	xautolock (pl10-1):
+
+	* Added Debian files
+
+Sun Jun 30 16:22:25 MET DST 1996 Michael Meskes <meskes@debian.org>
+
+	xautolock (pl10-2):
+
+	* New naming scheme
+
+	* Gzip manpage
+
+

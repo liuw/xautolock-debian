@@ -1,0 +1,18 @@
+Source: xautolock
+Section: x11
+Priority: optional
+Maintainer: Roland Stigge <stigge@antcom.de>
+Build-Depends: debhelper (>= 9), xutils-dev (>= 1:1.0.2-2), libx11-dev, libxss-dev, x11proto-core-dev, dpkg-dev (>= 1.16.1~)
+Standards-Version: 3.9.4
+
+Package: xautolock
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: xtrlock | xscreensaver
+Description: Program launcher for idle X sessions
+ Xautolock monitors input devices under the X Window System, and launches a
+ program of your choice if there is no activity after a user-configurable
+ period of time.  You can use this to automatically start up a screen locker
+ if you have left your computer unattended for some period of time.  The
+ program launched need not be a screen locker such as xlock.
+     

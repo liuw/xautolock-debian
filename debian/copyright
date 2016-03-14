@@ -1,0 +1,38 @@
+This is the Debian packaged version of xautolock.
+
+Authors:
+Stefan De Troch <stefan@specs.philips.com>
+Michel Eyckmans <eyckmans@imec.be> (current maintainer)
+
+Copyright 1990, 1992-1999, 2001-2002 by Stefan De Troch and Michel Eyckmans
+
+This package was put together by the following Debian maintainers:
+Michael Meskes <meskes@debian.org>
+Frederic Lepied <Lepied@debian.org>
+Søren Boll Overgaard <boll@debian.org>
+Roland Stigge <stigge@antcom.de>
+
+The sources can be obtained from:
+http://www.ibiblio.org/pub/Linux/X11/screensavers/
+
+Xautolock licensing
+===================
+
+Versions 2.0 and above of xautolock can be redistributed and/or modified
+under the terms of version 2 of the GNU General Public License as published
+by the Free Software Foundation. The complete license is available as 
+/usr/share/common-licenses/GPL-2 on your Debian system
+
+Note that this General Public License does not permit incorporating version 
+2.0 and above of xautolock into programs that are distributed under terms 
+incompatible with those of the GNU General Public License. If this limitation
+is a problem for you, please consider using the earlier versions 1.7 to 1.15 
+of xautolock (previously known as "patchlevel 7" to "patchlevel 15"). These
+earlier versions can be redistributed and/or modified under a simple "for
+non-commercial use" license. On demand, these earlier versions can also be
+made available under other conditions on a case by case basis.
+
+This program is distributed WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+

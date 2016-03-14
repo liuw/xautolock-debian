@@ -1,0 +1,4 @@
+10-fix-memory-corruption.patch
+11-fix-no-dpms.patch
+12-fix-manpage.patch
+13-fix-hppa-build.patch

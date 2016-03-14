@@ -1,0 +1,2 @@
+version=3
+http://www.ibiblio.org/pub/Linux/X11/screensavers/ xautolock-(\d+\..+)\.tgz
